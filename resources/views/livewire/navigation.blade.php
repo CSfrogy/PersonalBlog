@@ -1,20 +1,26 @@
-<nav class="flex justify-between items-center bg-gray-800 p-4 shadow-md">
-    <div class="flex space-x-4">
-        <a href="{{ route('home') }}" wire:navigate
-            class="text-white hover:text-blue-400 font-semibold px-3 py-2 rounded-md transition duration-150">Home</a>
+<nav class="flex justify-between items-center bg-white p-4 shadow-md">
+    <div class="flex space-x-4 text-black font-medium"> <a href="{{ route('home') }}" wire:navigate
+            class="hover:text-blue-500 @if (request()->is('/')) font-bold text-blue-700 @endif">
+            Home
+        </a>
+
         <a href="{{ route('post') }}" wire:navigate
-            class="text-white hover:text-blue-400 font-semibold px-3 py-2 rounded-md transition duration-150">Post</a>
+            class="hover:text-blue-500 @if (request()->is('post')) font-bold text-blue-700 @endif">
+            Post
+        </a>
+
         <a href="{{ route('contact') }}" wire:navigate
-            class="text-white hover:text-blue-400 font-semibold px-3 py-2 rounded-md transition duration-150">Contact
-            Us</a>
+            class="hover:text-blue-500 @if (request()->is('contact')) font-bold text-blue-700 @endif">
+            Contact Us
+        </a>
     </div>
 
     <div class="flex space-x-3">
-        <a href="{{ route('login') }}" wire:navigate
-            class="text-white hover:text-blue-400 font-semibold px-3 py-2 rounded-md transition duration-150">Sign
-            In</a>
-        <a href="{{ route('register') }}" wire:navigate
-            class="text-white hover:text-blue-400 font-semibold px-3 py-2 rounded-md transition duration-150">Sign
-            Up</a>
+        <a href="{{ route('login') }}" wire:navigate class="text-sm font-semibold px-4 py-2 rounded-lg
+           bg-blue-600 text-white
+           hover:bg-blue-700
+           transition duration-150 shadow-md">
+            Sign In
+        </a>
     </div>
 </nav>
