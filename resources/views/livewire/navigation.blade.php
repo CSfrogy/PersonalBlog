@@ -4,9 +4,9 @@
             Home
         </a>
 
-        <a href="{{ route('post') }}" wire:navigate
+        <a href="{{ route('posts') }}" wire:navigate
             class="hover:text-blue-500 @if (request()->is('post')) font-bold text-blue-700 @endif">
-            Post
+            Posts
         </a>
 
         <a href="{{ route('contact') }}" wire:navigate
