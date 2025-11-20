@@ -1,11 +1,11 @@
-<nav class="flex justify-between items-center bg-white p-4 shadow-md">
+<nav class="flex justify-between items-center bg-white shadow-ms border-b border-gray-100 p-5"">
     <div class="flex space-x-4 text-black font-medium"> <a href="{{ route('home') }}" wire:navigate
             class="hover:text-blue-500 @if (request()->is('/')) font-bold text-blue-700 @endif">
             Home
         </a>
 
         <a href="{{ route('posts') }}" wire:navigate
-            class="hover:text-blue-500 @if (request()->is('post')) font-bold text-blue-700 @endif">
+            class="hover:text-blue-500 @if (request()->is('posts')) font-bold text-blue-700 @endif">
             Posts
         </a>
 
