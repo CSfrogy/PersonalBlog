@@ -13,7 +13,7 @@ class HomeController extends Controller
     public function __invoke(Request $request)
     {
         return view('home',[
-            'Posts' => Post::take(3)->get()
+            'latestPosts' => Post::published()->take(3)->get()
         ]);
     }
 }
