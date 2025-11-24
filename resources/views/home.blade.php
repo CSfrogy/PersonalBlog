@@ -1,6 +1,6 @@
 <x-layouts.layout>
     <!-- Hero Section -->
-    <section class="bg-white">
+    <section class="bg-white h-screen">
         <div class="grid max-w px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
             <div class="mr-auto place-self-center lg:col-span-7">
                 <h1
@@ -31,7 +31,7 @@
     </section>
 
      {{-- Featured Posts Section --}}
-    <section id="featured-posts" class="bg-white py-16">
+    <section id="latest-posts" class="bg-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 text-center mb-12">
                 Latest Posts
@@ -44,7 +44,7 @@
             </div>
 
             <div class="mt-12 text-center">
-                <a href="{{ route('posts') }}"
+                <a href="{{ route('posts') }}" wire:navigate
                     class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100">
                     View All Posts
                 </a>
