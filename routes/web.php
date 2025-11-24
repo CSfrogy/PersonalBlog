@@ -1,13 +1,14 @@
 <?php
 
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
 })->name('home');
-Route::get('posts', function () {
-    return view('posts');
-})->name('posts');
+Route::get('/posts',[PostController::class,'index'])->name('posts.index');
+
+
 Route::get('contact', function () {
     return view('contact');
 })->name('contact');

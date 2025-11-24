@@ -4,7 +4,7 @@
             Home
         </a>
 
-        <a href="{{ route('posts') }}" wire:navigate
+        <a href="{{ route('posts.index') }}" wire:navigate
             class="hover:text-blue-500 @if (request()->is('posts')) font-bold text-blue-700 @endif">
             Posts
         </a>
