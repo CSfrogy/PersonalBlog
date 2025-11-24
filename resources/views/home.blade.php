@@ -30,8 +30,8 @@
         </div>
     </section>
 
-    <!-- Featured Posts Section -->
-    <section id="featured-posts" class="bg-gray-50 py-16">
+     {{-- Featured Posts Section --}}
+    <section id="featured-posts" class="bg-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 text-center mb-12">
                 Latest Posts
