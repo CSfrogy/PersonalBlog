@@ -1,12 +1,13 @@
 <?php
 
-use App\Http\Controllers\PostController;
+use App\Livewire\Posts\Index;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
 
 Route::get('/', function () {
     return view('home');
 })->name('home');
-Route::get('/posts',[PostController::class,'index'])->name('posts.index');
+Route::get('/posts',[Index::class,'render'])->name('posts.index');
 
 
 Route::get('contact', function () {
