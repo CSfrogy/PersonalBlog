@@ -11,7 +11,6 @@ class Index extends Component
 
     public function mount()
     {
-        // Get the last 3 posts for featured section
         $this->featuredPosts = Post::with(['author', 'category'])
             ->latest()
             ->take(3)

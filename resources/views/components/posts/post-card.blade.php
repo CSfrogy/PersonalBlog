@@ -1,7 +1,6 @@
 @props(['post'])
 <div class="rounded-2xl overflow-hidden shadow-lg flex flex-col">
     <a href="#"></a>
-    {{-- image click link --}}
     <div class="relative">
         <a href="#">
             <img class="w-full"
