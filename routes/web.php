@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', HomeController::class)->name('home');
 Route::get('posts', [PostController::class,'index'])->name('posts');
+Route::get('posts/{post}', [PostController::class, 'show'])->name('posts.show');
 Route::get('contact', function () {
     return view('contact');
 })->name('contact');

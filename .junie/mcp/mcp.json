@@ -1,0 +1,20 @@
+{
+    "mcpServers": {
+        "laravel-boost": {
+            "command": "C:\\laragon\\bin\\php\\php-8.3.16-Win32-vs16-x64\\php.exe",
+            "args": [
+                "E:\\Laravel\\PersonalBlog\\artisan",
+                "boost:mcp"
+            ]
+        },
+        "herd": {
+            "command": "C:\\laragon\\bin\\php\\php-8.3.16-Win32-vs16-x64\\php.exe",
+            "args": [
+                "C:/Users/user/.config/herd/bin/herd-mcp.phar"
+            ],
+            "env": {
+                "SITE_PATH": "E:\\Laravel\\PersonalBlog"
+            }
+        }
+    }
+}
