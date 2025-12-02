@@ -17,4 +17,6 @@ class PostController extends Controller
         return 'Post details coming soon!';
 
     }
+
+
 }

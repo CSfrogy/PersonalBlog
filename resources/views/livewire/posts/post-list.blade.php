@@ -28,7 +28,7 @@
                 </div>
                 <div class="flex-1">
                     <h2 class="mb-2 text-xl font-semibold text-gray-900">
-                        <a href="{{route('posts.show',$post)}}" class="hover:text-blue-600 transition-colors duration-200">{{$post->title}}</a>
+                        <a href="{{route('posts',$post)}}" class="hover:text-blue-600 transition-colors duration-200">{{$post->title}}</a>
                     </h2>
                     <p class="text-sm text-gray-600 mb-2">By {{$post->user->name}} on {{ $post->published_at->format('F j, Y') }}</p>
                     <p class="text-gray-700">{{Str::limit($post->body,200)}}</p>
