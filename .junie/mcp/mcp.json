@@ -1,9 +1,10 @@
 {
     "mcpServers": {
         "laravel-boost": {
-            "command": "C:\\laragon\\bin\\php\\php-8.3.16-Win32-vs16-x64\\php.exe",
+            "command": "wsl.exe",
             "args": [
-                "E:\\Laravel\\PersonalBlog\\artisan",
+                "/home/user/.config/herd-lite/bin/php",
+                "/mnt/e/Laravel/PersonalBlog/artisan",
                 "boost:mcp"
             ]
         },
